@@ -679,7 +679,25 @@ img {
 }
 
 /*=============== EXPERIENCE ===============*/
-.experience__container{
+@media screen and (min-width: 768px) {
+  .experience__container {
+    grid-template-columns: 1fr 2fr; /* Makes the card area wider */
+  }
+
+  .experience__card {
+    grid-template-columns: 350px 600px; /* Increase second column width */
+    column-gap: 4rem;
+  }
+
+  .experience__data {
+    width: 100%;
+    max-width: 600px; /* Optional: set a max width */
+    padding: 2rem;    /* More padding for spacious look */
+  }
+}
+
+
+/* .experience__container{
   row-gap: 2rem;
 }
 
@@ -711,7 +729,7 @@ img {
 .experience__description{
   color: var(--text-color);
 
-}
+} */
 /*=============== ACHIEVEMENTS & CERTIFICATIONS SECTION ===============*/
 .achievements {
   padding-block: 2rem 4rem;
