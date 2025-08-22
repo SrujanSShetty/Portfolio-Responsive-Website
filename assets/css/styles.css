@@ -687,6 +687,7 @@ img {
   .experience__card {
     grid-template-columns: 350px 600px; /* Increase second column width */
     column-gap: 4rem;
+    background-color: var(--container-color);
   }
 
   .experience__data {
