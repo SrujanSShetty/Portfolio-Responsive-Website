@@ -693,7 +693,13 @@ img {
     width: 100%;
     max-width: 600px; /* Optional: set a max width */
     padding: 2rem;    /* More padding for spacious look */
+    background-color: var(--container-color);
   }
+
+  .experience__description{
+  color: var(--text-color);
+
+}
 }
 
 
