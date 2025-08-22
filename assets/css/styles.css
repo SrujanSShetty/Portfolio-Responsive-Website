@@ -681,26 +681,31 @@ img {
 /*=============== EXPERIENCE ===============*/
 @media screen and (min-width: 768px) {
   .experience__container {
-    grid-template-columns: 1fr 2fr; /* Makes the card area wider */
+    grid-template-columns: 1fr 2.5fr; /* Make the card area even wider */
+    background-color: var(--container-color); /* Ensure background color stays */
+    padding: 2rem; /* Optional: add padding for spacing */
+    border-radius: 2rem; /* Optional: rounded corners */
   }
 
   .experience__card {
-    grid-template-columns: 350px 600px; /* Increase second column width */
+    grid-template-columns: 350px 750px; /* Increase second column width */
     column-gap: 4rem;
-    background-color: var(--container-color);
+    background-color: var(--container-color); /* Keep card background */
+    border-radius: 2rem; /* Optional: rounded corners */
+    padding: 2rem; /* Optional: more padding */
   }
 
   .experience__data {
     width: 100%;
-    max-width: 600px; /* Optional: set a max width */
-    padding: 2rem;    /* More padding for spacious look */
-    background-color: var(--container-color);
+    max-width: 750px; /* Match new column width */
+    padding: 2rem;
+    background-color: var(--container-color); /* Keep data background */
+    border-radius: 2rem; /* Optional: rounded corners */
   }
 
-  .experience__description{
-  color: var(--text-color);
-
-}
+  .experience__description {
+    color: var(--text-color);
+  }
 }
 
 
