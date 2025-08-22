@@ -679,33 +679,36 @@ img {
 }
 
 /*=============== EXPERIENCE ===============*/
-@media screen and (min-width: 768px) {
-  .experience__container {
-    grid-template-columns: 1fr 2.5fr; /* Make the card area even wider */
-    background-color: var(--container-color); /* Ensure background color stays */
-    padding: 2rem; /* Optional: add padding for spacing */
-    border-radius: 2rem; /* Optional: rounded corners */
-  }
+.experience__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
 
-  .experience__card {
-    grid-template-columns: 350px 750px; /* Increase second column width */
-    column-gap: 4rem;
-    background-color: var(--container-color); /* Keep card background */
-    border-radius: 2rem; /* Optional: rounded corners */
-    padding: 2rem; /* Optional: more padding */
-  }
+.experience__card {
+  background-color: var(--container-color);
+  border-radius: 2rem;
+  padding: 2rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
 
-  .experience__data {
-    width: 100%;
-    max-width: 750px; /* Match new column width */
-    padding: 2rem;
-    background-color: var(--container-color); /* Keep data background */
-    border-radius: 2rem; /* Optional: rounded corners */
-  }
+.experience__company {
+  font-size: var(--h2-font-size);
+  margin-bottom: .5rem;
+}
 
-  .experience__description {
-    color: var(--text-color);
-  }
+.experience__date {
+  font-size: var(--smaller-font-size);
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.experience__description {
+  color: var(--text-color);
+  font-size: var(--normal-font-size);
 }
 
 
